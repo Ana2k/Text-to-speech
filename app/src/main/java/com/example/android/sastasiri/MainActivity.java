@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onInit(int status) {
                 if (status== TextToSpeech.SUCCESS){
-                    int result = mTTS.setLanguage(Locale.GERMAN);
+                    int result = mTTS.setLanguage(Locale.GERMAN);//this will change the original voice(sound) layer of lady
 
                     if(result == TextToSpeech.LANG_MISSING_DATA||result == TextToSpeech.LANG_NOT_SUPPORTED){
                         Log.e("TTS","Language not supported");
@@ -75,5 +75,14 @@ public class MainActivity extends AppCompatActivity {
         mTTS.speak(text, TextToSpeech.QUEUE_FLUSH, null);
         //the way we change these line her will effect our overall sound.
 
+    }
+
+    @Override
+    protected void onDestroy() {
+        if(mTTS != null){
+            mTTS.stop();
+            mTTS.shutdown();
+        }
+        super.onDestroy();
     }
 }
