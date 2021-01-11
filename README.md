@@ -9,4 +9,11 @@ User may alter the pitch and speed of saying the word.
 Default voice is female.
 
 -----------------------------------------------------------------------------------------------------------------------------------------------------
-![Screenshot_1610373002](https://user-images.githubusercontent.com/54909114/104228669-2c86c700-5471-11eb-976d-4cea9239a81c.png)
+
+<table>
+<tr>
+  <td><img width="320" height ="600" src= "https://user-images.githubusercontent.com/54909114/104228669-2c86c700-5471-11eb-976d-4cea9239a81c.png" >
+  </td>
+</tr>
+</table>
+  
